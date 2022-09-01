@@ -1,0 +1,24 @@
+#titulo-principal{
+    text-align: center;
+}
+.subtitulo{
+    text-align: center;
+    color: #ff0080 ;
+}
+
+#contenedor-imagen{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    padding-left: 40%;
+}
+
+nav{
+    text-align: center;
+}
+
+nav a {
+    text-decoration: #a30454;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
