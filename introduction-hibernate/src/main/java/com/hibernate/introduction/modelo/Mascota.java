@@ -73,8 +73,10 @@ public class Mascota {
 
     @Override
     public String toString() {
-        return "Mascota [apellido=" + apellido + ", foto=" + foto + ", id=" + id + ", nombre=" + nombre
+        String info ="----\n";
+        info += "Mascota [apellido=" + apellido + ", foto=" + foto + ", id=" + id + ", nombre=" + nombre
                 + ", observacion=" + observacion + ", raza=" + raza + "]";
+        return info;
     }
     
     

@@ -25,9 +25,24 @@ public class App
         session.beginTransaction();
         try{
             //Crear objeto
-            Mascota objMascota= new Mascota("Roko", "Acuna", "Criollo", "#", "Ninguna");
+            /* Mascota objMascota= new Mascota("Roko", "Acuna", "Criollo", "#", "Ninguna");
             session.persist(objMascota);
-            session.getTransaction().commit();;
+            session.getTransaction().commit(); */
+
+           /*  Mascota objMascota2= new Mascota("firulais", "Guzman", "bulldog", "#", "Ninguna");
+            session.persist(objMascota2);           
+            session.getTransaction().commit();  */
+
+            //Buscar registro /mascota
+            Mascota mascota = session.find(Mascota.class, 2);
+           /* System.out.println( mascota.toString());
+           mascota.setRaza("Huskey");
+           //actualizar
+           session.merge(mascota);
+           //eliminar
+            session.remove(mascota);
+           session.getTransaction().commit(); */
+           System.out.println( mascota.toString());
             
         }catch(Exception e){
             e.printStackTrace();
